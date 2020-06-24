@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="@drawable/grad_bg"
+    tools:context=".LogoutFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp">
+
+<android.support.v7.widget.AppCompatImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btLogout"
+    android:layout_marginTop="0dp"
+    android:src="@drawable/logout1"
+    android:adjustViewBounds="true"
+    android:background="@drawable/bt_bg3"
+    android:scaleType="fitCenter"/>
+       <!-- <RelativeLayout
+            android:id="@+id/RelLay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_Close"
+                android:textSize="20sp"
+                android:textColor="@color/whiteColor"
+                android:background="@drawable/bt_bg"
+                android:layout_below="@+id/LinLay1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+-->
+    </RelativeLayout>
+
+
+</RelativeLayout>

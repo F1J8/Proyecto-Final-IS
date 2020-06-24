@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Prospectos.ProspectosU"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="45dp"
+        android:layout_marginTop="25dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:id="@+id/LinLay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20sp"
+                android:padding="40dp"
+                >
+                //Titulo
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvTitleR"
+                    android:textSize="28sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bt_bg2"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/colorPrimaryDarkGreen"/>
+                //Boton Transferencia
+                <Button
+                    android:id="@+id/btTransferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grad_bg2"
+                    android:text="@string/bt_Transferencia"
+                    android:textSize="16sp"
+                    android:textColor="@color/whiteColor"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+                //Cedula
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_DNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_DNI"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Cedula"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Nombre
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Nombre"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Apellido
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Apellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Apellido"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Numero de tel
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Tel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Tel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Tel1"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                //Numero de tel2
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Tel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Tel2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Tel2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //email
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Email"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Universidad
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_NombreUniversidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_NombreUniversidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_NombreUniversidad"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Carrera anterior
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_CarreraAnterior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_CarreraAnterior"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_CarreraAnterior"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                //Nivel anterior
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_NivelAnterior"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_NivelAnterior"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_NivelAnterior"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                //Botones
+                <Button
+                    android:id="@+id/bt_Registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Registro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spCarrera"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:background="@drawable/bt_bg2"/>
+
+                <Button
+                    android:id="@+id/bt_Buscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Buscar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_Registro"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:background="@drawable/bt_bg2" />
+
+                <Button
+                    android:id="@+id/bt_Modificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Modificar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_Buscar"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:background="@drawable/bt_bg2"/>
+
+                <Button
+                    android:id="@+id/bt_Borrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Borrar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_Modificar"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="75dp"
+                    android:paddingRight="75dp"
+                    android:background="@drawable/bt_bg2"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

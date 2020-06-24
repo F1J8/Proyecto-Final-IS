@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Clientes.AntiguosClientesFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="45dp"
+        android:layout_marginTop="25dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:id="@+id/LinLay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20sp"
+                android:padding="40dp"
+                >
+
+                //Cedula
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_DNI_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    app:errorEnabled="true"
+                    android:digits="0123456789E-"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_DNI_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Cedula"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Nombre
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Nombre_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Nombre_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Nombre"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Apellido
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Apellido_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Apellido_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Apellido"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Numero de tel
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Tel1_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Tel1_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Tel1"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                //Numero de tel2
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Tel2_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Tel2_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Tel2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //email
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Email_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Email_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Email"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Padre
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_NombrePadre_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_NombrePadre_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Padre_N"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Padre
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_ApellidoPadre_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_ApellidoPadre_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Padre_A"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                //Madre
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_NombreMadre_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_NombreMadre_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+                //Madre
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_ApellidoMadre_N"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_ApellidoMadre_N"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                //Carrera1
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Carrera1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    android:textColorHint="@color/colorPrimaryDarkGreen">
+
+                    <EditText
+                        android:id="@+id/et_Carrera1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDarkGreen"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                //Botones
+                <Button
+                    android:id="@+id/bt_Registro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Registro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spCarrera"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:background="@drawable/bt_bg2"/>
+
+                <Button
+                    android:id="@+id/bt_Buscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_Registro"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:background="@drawable/bt_bg2" />
+
+                <Button
+                    android:id="@+id/bt_Modificar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Modificar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_Buscar"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:background="@drawable/bt_bg2"/>
+
+                <Button
+                    android:id="@+id/bt_Borrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:text="@string/bt_Borrar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_Modificar"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="75dp"
+                    android:paddingRight="75dp"
+                    android:background="@drawable/bt_bg2"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="                    "
+                    android:textSize="25sp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Inicio"
+            android:icon="@drawable/ic_action_home"
+            />
+        <item
+            android:id="@+id/Clientes"
+            android:title="Clientes"
+            android:icon="@drawable/ic_clients"
+            />
+        <item
+            android:id="@+id/Activos"
+            android:title="Activos"
+            android:icon="@drawable/ic_activos"
+            />
+        <item
+            android:id="@+id/Promos"
+            android:title="@string/Promociones"
+            android:icon="@drawable/ic_promo"
+            />
+        <item
+            android:id="@+id/Proveedor"
+            android:title="Proveedores"
+            android:icon="@drawable/ic_proveedor"
+            />
+        <item
+            android:id="@+id/Servicios"
+            android:title="@string/Servicios"
+            android:icon="@drawable/ic_servicios"
+            />
+
+    </group>
+
+    <item android:title="Controles">
+
+        <menu>
+            <item
+                android:id="@+id/setting"
+                android:title="Informe"
+                android:icon="@drawable/ic_action_pdf"
+                />
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_action_logout"
+                />
+        </menu>
+
+    </item>
+
+</menu>

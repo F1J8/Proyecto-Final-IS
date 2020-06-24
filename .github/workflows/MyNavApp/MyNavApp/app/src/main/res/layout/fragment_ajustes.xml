@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Carreras.AjustesCarreras"
+    android:layout_marginTop="75dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        android:layout_marginTop="75dp"
+        android:background="@color/whiteColor">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="727dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/whiteColor">
+
+            <LinearLayout
+                android:id="@+id/LinLay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/whiteColor">
+                //Tipo de Servicio
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Blanco"
+                    android:textSize="55sp"
+                    android:textColor="@color/whiteColor"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TipoServicio"
+                    android:animateLayoutChanges="true"/>
+
+                //Cod
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:background="@drawable/et_bg2"
+                    android:digits="0123456789"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryDarkGreen"
+                    app:errorEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_IDProm"
+                        android:textColor="@color/colorPrimaryDarkGreen"
+                        android:textSize="18sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                //Nombre
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_bg2"
+                    android:textColorHint="@color/colorPrimaryDarkGreen"
+                    app:errorEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_Nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Nombre"
+                        android:textColor="@color/colorPrimaryDarkGreen"
+                        android:textSize="18sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                //Numero de tel
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_Precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_bg2"
+                    android:textColorHint="@color/colorPrimaryDarkGreen"
+                    app:errorEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_Precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:hint="@string/ti_Precio"
+                        android:textColor="@color/colorPrimaryDarkGreen"
+                        android:textSize="18sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <!--                    botones-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/bt_bg3"
+                    android:layout_marginTop="45dp"
+                    android:clipToPadding="false"
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/AgregarServicio"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/Transparent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bt_bg3">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/bolita1"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_agregar_usuario2" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/BuscarServicio"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bt_bg3">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/bolita3"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_buscar" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/ModificarServicio"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bt_bg3"
+                            >
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/bolita2"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_modiifcar_usuario" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/EliminarServicio"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bt_bg3">
+
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:background="@drawable/bolita3"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_eliminar_usuario" />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

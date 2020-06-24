@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/hyyper"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:padding="16dp"
+    >
+
+    <!--for backgroud i have an image-->
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/utp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <!--<TextView
+        android:id="@+id/usermail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usermail"
+        android:textColor="@color/whiteColor"
+        android:textSize="18sp"
+        />-->
+
+</LinearLayout>
